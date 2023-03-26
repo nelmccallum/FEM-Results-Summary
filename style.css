@@ -1,0 +1,131 @@
+@import url(https://fonts.google.com/specimen/Hanken+Grotesk);
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+    margin: 50px auto 50px;
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 20px 20px 30px -10px hsl(221, 100%, 96%);
+    border-radius: 30px;
+}
+
+#Result {
+    float: left;
+    background-image: linear-gradient(hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)) ;
+    width: 280px;
+    height: inherit;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#yResult {
+    margin: 35px auto;
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+
+#Score {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0));
+    margin: 0 auto 0;
+    text-align: center;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#Score h1 {
+    margin: 0;
+    font-size: 3.2em;
+    padding: 20%;
+    padding-bottom: 0;
+    font-weight: 800;
+}
+
+#Score p{
+    margin: 0;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+
+#Result h2 {
+    margin: 20px auto 10px;
+}
+
+#description {
+    margin: 0 auto;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+    padding: 0 35px;
+}
+
+
+.Summary {
+    float: right;
+    width: 320px;
+    height: inherit;
+}
+
+.Summary p {
+    margin: 35px auto;
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+    padding-left: 30px;
+}
+
+li {
+    display: flex;
+    margin: 10px auto;
+    list-style: none;
+    background-color: hsl(0, 100%, 67%, 20%);
+    height: 40px;
+    width: 230px;
+    border-radius: 10px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+ul {
+    margin: 10px auto;
+    padding: 0;
+}
+
+#button {
+    display: block;
+    background-color: hsl(224, 30%, 27%);
+    width: 230px;
+    height: 40px;
+    margin: 30px auto 30px;
+    padding: 0;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution, .attribution a {
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(228, 45%, 44%); 
+}
