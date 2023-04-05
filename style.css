@@ -2,6 +2,15 @@ body {
     font-family: "Hanken Grotesk", sans-serif;
 }
 
+.sr-only {
+    position: absolute ;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+  }
+
 .container {
     margin: 50px auto 50px;
     width: 600px;
