@@ -1,5 +1,3 @@
-@import url(https://fonts.google.com/specimen/Hanken+Grotesk);
-
 body {
     font-family: "Hanken Grotesk", sans-serif;
 }
@@ -53,7 +51,7 @@ body {
 #Score p{
     margin: 0;
     color: hsl(241, 100%, 89%);
-    font-weight: 500;
+    font-weight: 800;
 }
 
 #Result h2 {
@@ -76,8 +74,8 @@ body {
 
 .Summary p {
     margin: 35px auto;
-    color: hsl(241, 100%, 89%);
-    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
     padding-left: 30px;
 }
 
@@ -85,12 +83,43 @@ li {
     display: flex;
     margin: 10px auto;
     list-style: none;
-    background-color: hsl(0, 100%, 67%, 20%);
-    height: 40px;
     width: 230px;
     border-radius: 10px;
-    vertical-align: middle;
     text-align: left;
+    padding: 10px 0px;
+    vertical-align: middle;
+    font-family: "Hanken Grotesk", sans-serif;
+    justify-content: space-around;
+}
+
+ul #Reaction {
+    background-color: hsl(0, 100%, 67%, 20%);
+    color: #F55;
+}
+
+ul #Memory {
+    background-color: hsl(39, 100%, 56%, 20%);
+    color: #FFB21E;
+}
+
+ul #Verbal {
+    background-color: hsl(166, 100%, 37%, 20%);
+    color: #00BB8F;
+}
+
+ul #Visual {
+    background-color: hsl(234, 85%, 45%, 20%);
+    color: #1125D6;
+}
+
+li img{
+    height: 20px;
+}
+
+li span{
+    padding: 0 auto 0 30px;
+    justify-content: flex-end;
+    color: hsl(224, 30%, 27%);
 }
 
 ul {
@@ -110,22 +139,79 @@ ul {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#button:focus{
+    background-image: linear-gradient(hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%));
+    outline: 0px;
+    border: 0px;
+}
 
 .attribution, .attribution a {
     font-size: 11px; 
     text-align: center;
     color: hsl(228, 45%, 44%); 
+}
+
+@media(max-width:610px){
+    body{
+        margin: 0;
+        overflow: hidden;
+        height: max-content;
+    }
+
+    .container {
+        margin: 0;
+        width: auto;
+        height: inherit;
+        background-color: none;
+        box-shadow: none;
+    }
+
+    #description {
+        width: 40%;
+    }
+
+    #Result {
+        float: none;
+        width: inherit;
+        height: max-content;
+        padding: 30px;
+        margin: 0;
+        border-radius: 0;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    #yResult {
+        margin: 5px auto 30px;
+    }
+
+    .Summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        float: none;
+        margin: 0 auto;
+        width: 450px;
+    }
+    
+    .Summary p{
+        margin: 10px 0 10px 30px;
+        padding: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        width: 400px;
+    }
+
+    #button{
+        margin: 10px auto;
+        width: 400px;
+    }
+
 }
